@@ -2,7 +2,7 @@ FROM ubuntu:vivid
 MAINTAINER Aaron Nicoli <aaronnicoli@gmail.com>
 
 RUN apt-get update && \
-    apt-get install -y python-sphinx
+    apt-get install -y wget python-sphinx
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && \
     python get-pip.py && \
